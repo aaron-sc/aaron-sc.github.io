@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Jane Doette Portfolio Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- The main page container -->
+
+  <div class="grid">
+
+    <!-- The header row -->
+
+    <header class="row">
+      <div class="col-2">
+        <img class="header-logo" src="images/udacity-lightblue-logo.svg" alt="Udacity Ligh Blue Logo">
+      </div>
+      <div class="col-10">
+      	<h1>JANE DOETTE</h1>
+        <h4>FRONT-END NINJA</h4>
+      </div>
+    </header>
+
+    <!-- The horizontal line row -->
+
+    <div class="col-12">
+      <hr class="hr-style">
+    </div>
+
+    <!-- The front image row -->
+
+    <div class="row">
+        <picture class="col-12">
+          <source media="(min-width: 600px)" srcset="images/portfolio-front-img-1200_large_2x.jpg" >
+          <source media="(min-width: 512px)" srcset="images/portfolio-front-img-1024_large_1x.jpg" >
+          <source media="(min-width: 375px)" srcset="images/portfolio-front-img-750_medium_2x.jpg" >
+          <source media="(min-width: 275px)" srcset="images/portfolio-front-img-550_medium_1x.jpg" >
+          <img src="images/portfolio-front-img-350_small_1x.jpg" alt="Front section image">
+        </picture>
+    </div>
+
+    <!-- The featured work title row -->
+
+    <div class="row">
+      <h2 class="col-12">Featured Work</h2>
+    </div>
+
+    <!-- The featured work three projects
+         The first project under one column
+         The other two project under another column
+    -->
+
+    <div class="row">
+
+      <!-- The first project -->
+
+      <div class="first-column">
+        <article class="col-4 first-item">
+          <picture class="col-12">
+            <source media="(min-width: 512px)" srcset="images/appify-logo-1024_large_1x.jpg" >
+            <source media="(min-width: 375px)" srcset="images/appify-logo-750_medium_2x.jpg" >
+            <source media="(min-width: 275px)" srcset="images/appify-logo-550_medium_1x.jpg" >
+            <img src="images/appify-logo-350_small_1x.jpg" alt="APPIFY project logo">
+          </picture>
+          <h3 class="col-12 first-item-heading">APPIFY</h3>
+          <p class="col-12">
+            <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
+          </p>
+        </article>
+      </div>
+
+      <!-- The second and third project -->
+
+      <div class="second-column">
+        <article class="col-4 second-item">
+          <picture class="col-12">
+            <source media="(min-width: 512px)" srcset="images/sun-flower-logo-1024_large_1x.jpg" >
+            <source media="(min-width: 375px)" srcset="images/sun-flower-logo-750_medium_2x.jpg" >
+            <source media="(min-width: 275px)" srcset="images/sun-flower-logo-550_medium_1x.jpg" >
+            <img src="images/sun-flower-logo-350_small_1x.jpg" alt="SUNFLOWER project logo">
+          </picture>
+          <h3 class="col-12 second-item-heading">SUNFLOWER</h3>
+          <p class="col-12 second-item-link">
+            <a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
+          </p>
+        </article>
+        <article class="col-4 third-item">
+          <picture class="col-12">
+            <source media="(min-width: 512px)" srcset="images/bokeh-logo-1024_large_1x.jpg" >
+            <source media="(min-width: 375px)" srcset="images/bokeh-logo-750_medium_2x.jpg" >
+            <source media="(min-width: 275px)" srcset="images/bokeh-logo-550_medium_1x.jpg" >
+            <img src="images/bokeh-logo-350_small_1x.jpg" alt="BOKEH project logo">
+          </picture>
+          <h3 class="col-12 third-item-heading">BOKEH</h3>
+          <p class="col-12 third-item-link">
+            <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
